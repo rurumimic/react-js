@@ -5,5 +5,8 @@
   "main": "server.js",
   "repository": "https://github.com/rurumimic/react-js.git",
   "author": "Dodo <unhyop@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.7.0"
+  }
 }
