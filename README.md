@@ -5,7 +5,7 @@
 1. yarn: 자바스크립트 패키지 매니저
 1. koa.js: 웹 프레임워크 선택
 1. react.js: 웹 애플리케이션 자바스크립트 라이브러리
-1. ... 진행
+1. ... database, oauth2 login, redux pattern, tdd ... 계속
 
 ## 자바스크립트 패키지 매니저
 
