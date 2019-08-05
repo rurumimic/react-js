@@ -1,1 +1,65 @@
 # react-js
+
+## 순서
+
+1. yarn: 자바스크립트 패키지 매니저
+1. koa.js: 웹 프레임워크 선택
+1. react.js: 웹 애플리케이션 자바스크립트 라이브러리
+1. ... 진행
+
+## 자바스크립트 패키지 매니저
+
+- [npm](https://www.npmjs.com)
+- [yarn](https://yarnpkg.com/en/)
+
+### yarn
+
+#### macOS
+
+##### Homebrew
+
+```bash
+brew install yarn
+yarn --version
+```
+
+#### 세팅
+
+```bash
+yarn init
+
+question name (react-js): Diary
+# ... 생략
+question entry point (index.js): server.js
+# ... 생략
+question private: ↵
+```
+
+#### 결과
+
+`package.json`
+
+```json
+{
+  "name": "Diary",
+  "version": "1.0.0",
+  "description": "Diary webpage",
+  "main": "server.js",
+  "repository": "https://github.com/rurumimic/react-js.git",
+  "author": "Dodo <my@email.com>",
+  "license": "MIT"
+}
+```
+
+## 웹 프레임워크
+
+- [express.js](https://expressjs.com/ko/)
+- [koa.js](https://koajs.com)
+
+### koa.js
+
+Koa requires node v7.6.0 or higher for ES2015 and async function support.
+
+```bash
+yarn add koa
+```

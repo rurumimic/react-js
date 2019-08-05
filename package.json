@@ -1,0 +1,9 @@
+{
+  "name": "Diary",
+  "version": "1.0.0",
+  "description": "Diary webpage",
+  "main": "server.js",
+  "repository": "https://github.com/rurumimic/react-js.git",
+  "author": "Dodo <unhyop@gmail.com>",
+  "license": "MIT"
+}
