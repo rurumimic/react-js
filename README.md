@@ -63,3 +63,43 @@ Koa requires node v7.6.0 or higher for ES2015 and async function support.
 ```bash
 yarn add koa
 ```
+
+koa.js 프레임워크 설치가 끝나고 디렉터리에 `node_modules 디렉터리`와 `yarn.lock`이 추가된 것이 보인다.
+
+```bash
+.
+├── README.md
+├── node_modules
+├── package.json
+└── yarn.lock
+
+1 directory, 3 files
+```
+
+### Node 서버 실행
+
+최상위 디렉터리에 `server.js`를 작성한다.
+
+```js
+const Koa = require('koa');
+const app = new Koa();
+
+app.use(async ctx => {
+  ctx.body = 'Hello World';
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server started at port ` + port);
+});
+```
+
+서버를 실행해본다.
+
+```bash
+node .
+
+Server started at port 3000
+```
+
+브라우저로 [localhost:3000](//localhost:3000)에 접속해서 확인해보자.
