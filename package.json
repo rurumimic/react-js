@@ -7,6 +7,7 @@
   "author": "Dodo <unhyop@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "koa": "^2.7.0"
+    "koa": "^2.7.0",
+    "koa-static": "^5.0.0"
   }
 }

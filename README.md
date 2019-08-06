@@ -5,6 +5,9 @@
 1. yarn: 자바스크립트 패키지 매니저
 1. koa.js: 웹 프레임워크 선택
 1. react.js: 웹 애플리케이션 자바스크립트 라이브러리
+1. 빌드: Static 파일 전송으로 웹
+1. koa-router: 라우터 미들웨어. URL 만들기.
+1. proxy: 개발 서버에서 react 앱과 koa 서버 연결
 1. ... database, oauth2 login, redux pattern, tdd ... 계속
 
 ---
@@ -89,10 +92,10 @@ const Koa = require('koa');
 const app = new Koa();
 
 app.use(async ctx => {
-  ctx.body = 'Hello World';
+  ctx.body = 'Hello, there.';
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8081;
 app.listen(port, () => {
   console.log(`Server started at port ` + port);
 });
@@ -103,10 +106,12 @@ app.listen(port, () => {
 ```bash
 yarn start
 
-Server started at port 3000
+Server started at port 8081
 ```
 
-브라우저로 [localhost:3000](//localhost:3000)에 접속해서 확인해보자.
+브라우저로 [localhost:8081](//localhost:8081)에 접속해서 확인해보자.
+
+`Hello, there.`가 보인다.
 
 ---
 
@@ -142,4 +147,64 @@ cd client
 yarn start
 ```
 
+[localhost:3000](//localhost:3000)에서 리액트 앱 페이지가 보인다.
+
 ---
+
+## 4. 빌드
+
+`client` 폴더에서 리액트 앱을 빌드한다.
+
+```bash
+cd client
+yarn run build
+```
+
+최상위 프로젝트 폴더에 [koa-static](https://github.com/koajs/static)을 추가한다.
+
+```bash
+yarn add koa-static
+```
+
+`server.js` 코드를 다음과 같이 수정한다.
+
+```js
+const Koa = require('koa');
+const serve = require('koa-static');
+const app = new Koa();
+
+app.use(serve(__dirname + '/client/build'));
+
+const port = process.env.PORT || 8081;
+app.listen(port, () => {
+  console.log(`Server started at port ` + port);
+});
+```
+
+`yarn start`로 실행하고 [localhost:8081](//localhost:8081)에 접속해서 확인해보자.
+
+리액트 앱 페이지가 보인다.
+
+---
+
+## 5. Koa Router
+
+[koa-router](https://github.com/ZijianHe/koa-router)
+
+```bash
+yarn add koa-router
+```
+
+---
+
+## 6. Proxy
+
+`client/package.json`에 프록시를 추가한다.
+
+```json
+{
+  "proxy": "http://localhost:8081"
+}
+```
+
+.. 수정 중
