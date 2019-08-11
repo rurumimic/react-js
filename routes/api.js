@@ -5,7 +5,6 @@ const router = new Router({
 
 // responds to "/api"
 router.get('/hello', (ctx, next) => {
-  console.log('connect');
   ctx.body = {
     greet: "Hello, there."
   };
