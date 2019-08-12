@@ -2,9 +2,9 @@
   "name": "Diary",
   "version": "1.0.0",
   "description": "Diary webpage",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "server": "node server.js",
+    "server": "node index.js",
     "start": "concurrently \"yarn server\" \"cd client && yarn start\""
   },
   "repository": "https://github.com/rurumimic/react-js.git",
