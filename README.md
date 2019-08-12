@@ -8,4 +8,4 @@
 1. [koa-static](docs/004.koa-static.md): Static 파일 전송. Production 환경에서 이용
 1. [koa-router](docs/005.koa-router.md): 라우터 미들웨어. URL. 프록시 설정 사용하여 개발 서버에서 react 앱과 koa 서버 연결
 1. [Concurrently](docs/006.concurrently.md): 명령어 단축키
-1. ... database, oauth2 login, redux pattern, tdd ... 계속
+1. ... database, oauth2 login, redux pattern, tdd, es6, eslint, typescript ... 계속
