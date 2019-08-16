@@ -6,7 +6,7 @@
   "scripts": {
     "server": "node index.js",
     "start": "concurrently \"yarn server\" \"cd client && yarn start\"",
-    "lint": "./node_modules/.bin/eslint ./**/*.js"
+    "lint": "./node_modules/.bin/eslint ."
   },
   "repository": "https://github.com/rurumimic/react-js.git",
   "author": "Dodo <unhyop@gmail.com>",
