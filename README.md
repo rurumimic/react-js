@@ -10,4 +10,5 @@
 1. [concurrently](docs/006.concurrently.md): 명령어 단축키
 1. [ESLint](docs/007.eslint.md): 자바스크립트 문법 검사
 1. [Prettier](docs/008.prettier.md): 코드 스타일 정리
-1. ... database, oauth2 login, redux pattern, tdd, es6, typescript ... 계속
+1. [TypeScript](docs/009.typescript.md): 타입스크립트 적용
+1. ... database, oauth2 login, redux pattern, tdd, es6 ... 계속
