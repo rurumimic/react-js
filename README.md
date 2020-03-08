@@ -1,5 +1,10 @@
 # react-js
 
+## 프로젝트 종료
+
+Javascript 기반이 아닌 TypeScript 기반 리액트 프로젝트를 참고한다.  
+[TypeScript + React.js](https://github.com/rurumimic/react-ts)
+
 ## 순서
 
 1. [yarn](docs/001.yarn.md): 자바스크립트 패키지 매니저
@@ -10,5 +15,4 @@
 1. [concurrently](docs/006.concurrently.md): 명령어 단축키
 1. [ESLint](docs/007.eslint.md): 자바스크립트 문법 검사
 1. [Prettier](docs/008.prettier.md): 코드 스타일 정리
-1. [TypeScript](docs/009.typescript.md): Koa.js + 타입스크립트
-1. ... database, oauth2 login, redux pattern, tdd, es6 ... 계속
+1. redux pattern, tdd, es6, database, oauth2 login ...
